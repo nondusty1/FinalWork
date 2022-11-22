@@ -2,6 +2,16 @@
 int lengthLimit = 3;
 int resultItems = CheckArray(inputArray, lengthLimit);
 string[] outputArray = new string[resultItems];
+int CheckArray(string[] array, int lengthLimit)
+{
+    int result = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= lengthLimit)
+            result++;
+    }
+    return result;
+}
 void WriteNewArray(string[] oldArray, string[] newArray, int lengthLimit)
 {
     int temp = 0;
@@ -13,16 +23,6 @@ void WriteNewArray(string[] oldArray, string[] newArray, int lengthLimit)
             temp++;
         }
     }
-}
-int CheckArray(string[] array, int lengthLimit)
-{
-    int result = 0;
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i].Length <= lengthLimit)
-            result++;
-    }
-    return result;
 }
 string PrintArray(string[] array)
 {
