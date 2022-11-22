@@ -8,7 +8,10 @@
 - [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 - [“Russia”, “Denmark”, “Kazan”] → []
 
-## Решение:
+## Решение: 
+[Код](https://github.com/nondusty1/FinalWork/blob/master/Program.cs) 
+
+[Блок-схема](https://github.com/nondusty1/FinalWork/blob/master/FinalWork.drawio.png) 
 - Первоначальный массив строк **inputArray** имеет значение из примера и в нём заданы все строки.
 - Переменная ***lengthLimit*** согласно заданию равна 3.
 - Метод **CheckArray** необходим для подсчёта количества элементов, размер которых меньше ***lengthLimit***. Подсчёт осуществляется перебором элементов массива **inputArray** и сравнением количества их элементов с переменной ***lengthLimit***, то есть трёх символов.
